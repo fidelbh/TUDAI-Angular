@@ -1,0 +1,12 @@
+<h3 class="text-uppercase text-center">Carrito</h3>
+<table class="table text-center mt-3">
+  <thead></thead>
+  <tbody>
+    <tr *ngFor="let pizza of cartList$ | async">
+      <td>{{ pizza.name }}</td>
+      <td>{{ pizza.size }}</td>
+      <td>{{ pizza.quantity }}</td>
+    </tr>
+  </tbody>
+</table>
+<ul></ul>
